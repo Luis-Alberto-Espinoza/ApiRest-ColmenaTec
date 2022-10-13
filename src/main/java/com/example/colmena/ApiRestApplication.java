@@ -1,0 +1,15 @@
+package com.example.colmena;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ApiRestApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ApiRestApplication.class, args);
+		//conectarse al php myadmin http://localhost/phpmyadmin
+
+	}
+
+}
