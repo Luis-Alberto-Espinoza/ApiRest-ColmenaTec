@@ -1,10 +1,10 @@
-package controllers;
+package com.example.colmena.controllers;
 
-import entities.Persona;
+import com.example.colmena.entities.Persona;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import services.PersonaService;
+import com.example.colmena.services.PersonaService;
 
 @RestController
 @CrossOrigin(origins = "*")

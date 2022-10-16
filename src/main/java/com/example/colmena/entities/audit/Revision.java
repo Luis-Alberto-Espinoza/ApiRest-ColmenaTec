@@ -1,6 +1,6 @@
-package audit;
+package com.example.colmena.entities.audit;
 
-import config.CustomRevisionListener;
+import com.example.colmena.config.CustomRevisionListener;
 import lombok.Data;
 import org.hibernate.envers.RevisionEntity;
 import org.hibernate.envers.RevisionNumber;

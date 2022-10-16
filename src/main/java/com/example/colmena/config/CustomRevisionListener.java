@@ -1,6 +1,6 @@
-package config;
+package com.example.colmena.config;
 
-import audit.Revision;
+import com.example.colmena.entities.audit.Revision;
 import org.hibernate.envers.RevisionListener;
 
 public class CustomRevisionListener implements RevisionListener{

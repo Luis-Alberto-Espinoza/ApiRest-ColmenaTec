@@ -1,6 +1,6 @@
-package services;
+package com.example.colmena.services;
 
-import entities.Persona;
+import com.example.colmena.entities.Persona;
 
 import java.util.List;
 

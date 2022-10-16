@@ -1,9 +1,9 @@
-package services;
+package com.example.colmena.services;
 
-import entities.Persona;
+import com.example.colmena.repositories.PersonaRepository;
+import com.example.colmena.entities.Persona;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repositories.PersonaRepository;
 
 import javax.transaction.Transactional;
 import java.util.List;

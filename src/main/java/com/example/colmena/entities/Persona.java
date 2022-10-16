@@ -1,4 +1,4 @@
-package entities;
+package com.example.colmena.entities;
 
 import lombok.*;
 import org.hibernate.envers.*;

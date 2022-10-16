@@ -1,7 +1,7 @@
-package repositories;
+package com.example.colmena.repositories;
 
 
-import entities.Persona;
+import com.example.colmena.entities.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
