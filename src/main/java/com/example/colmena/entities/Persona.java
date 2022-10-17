@@ -12,11 +12,8 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Audited
-public class Persona implements Serializable{
-    private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Persona extends Base{
+
     @Column(name="nombre")
     private String nombre;
     @Column(name="apellido")
