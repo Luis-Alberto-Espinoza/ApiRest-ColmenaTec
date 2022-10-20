@@ -3,9 +3,27 @@ package com.example.colmena.repositories;
 
 import com.example.colmena.entities.Persona;
 
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import org.w3c.dom.stylesheets.LinkStyle;
+
+import java.util.List;
 
 @Repository
 public interface PersonaRepository extends BaseRepository<Persona, Long> {
+    List<Persona> findByNombreContainingOrApellidoContaining(String nombre, String apellido);
+//
+////    @Query(value= "SELECT p FROM Persona p WHERE p.nombre LIKE %?1% ")
+////List<Persona> search(String filtro);
+//
+    @Query(value= "SELECT p FROM Persona p WHERE p.nombre LIKE %:filtro% OR p.apellido LIKE %:filtro%")
+    List<Persona> search(@Param("filtro") String filtro);
+@Query(
+        value = "SELECT * FROM persona WHERE persona.nombre LIKE %:filtro% OR persona.apellido LIKE %:filtro%",
+        nativeQuery = true
+)
+    List<Persona> searchNativo(@Param("filtro") String filtro);
+//    //boolean existByDeni(int dni);
 
 }
