@@ -10,6 +10,7 @@ public class ApiRestApplication {
 		SpringApplication.run(ApiRestApplication.class, args);
 		//conectarse al php myadmin http://localhost/phpmyadmin
 		//http://localhost:9000/api/v1/personas
+		///home/luis/Facultad/programacion/apiColmenaPruevaEgg/v01_colmena-egg/colmena
 	}
 
 }
